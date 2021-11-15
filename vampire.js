@@ -52,9 +52,15 @@ class Vampire {
   vampireWithName(name) {
     // find a vanmpire with a specific name
     // return name if that vampire does not exist
-    let vampireName = null;
+    console.log(this.name);
+    if (this.offspring.length === 0) {
+      return null;
+    }
+    for(const offspring of this.offspring){
+      offspring.vampireWithName(name)
+    }
     
-    return vampireName;
+    return null;
   }
 
   // Returns the total number of vampires that exist
