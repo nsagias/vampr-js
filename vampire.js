@@ -54,7 +54,6 @@ class Vampire {
     // return name if that vampire does not exist
     let vampireName = null;
     
-
     return vampireName;
   }
 
